@@ -1,26 +1,22 @@
-## 145f01f1-delta
-
-- Refactor mount mirrors and revert unmount
-- Unshare process mount namespace after setuid
+## e2771d73-delta
 
 ### Diffs to official Magisk
 
-- [General] Restore MagiskHide, uses system logcat to monitor app processes startup: abnormal logcat can't use MagiskHide.
-- [App] The package name is `io.github.huskydg.magisk`
-- [App] Support Magisk installation without boot image for emulators
-- [General] Copy required files to `/system` for `addon.d`, like Lygisk
+- [General] MagiskHide is rewritten, rely on system logcat
+- [App] Add support for install Magisk into system partition
+- [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
 - [Modules] Support systemless deleting files or folders for modules
 - [General] Built-in Bootloop Protection to protect system from bootloop by Modules
 - [General] Tune F2FS for unencrypted devices
 - [MagiskInit] Support Pre-Init mount, replace system files before `init` starts
 - [MagiskInit] Support loading custom rc script from pre-init directory
-- [App] Wait for service to bind before accessing  [topjohnwu/Magisk#6268](https://github.com/topjohnwu/Magisk/pull/6268)
+- [App] Wait for service to bind before accessing
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
-- [MagiskInit] Use stable random number seed [topjohnwu/Magisk#6340](https://github.com/topjohnwu/Magisk/pull/6340)
-- [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist): Magisk is hidden by default, only processes on sulist will be able to obtain root access
-- [Zygisk]: Change to Native bridge method by [5ec1cff](https://github.com/5ec1cff/my-notes/blob/master/maru.md)
-- [Zygisk]: Add inode plt hook APIs [topjohnwu/Magisk#6398](https://github.com/topjohnwu/Magisk/pull/6398)
+- [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist)
+- [Zygisk]: Switch to use native bridge
+- [Zygisk]: Replace xhook with lsplt hook api
+- [General]: Refactor mount mirrors and revert unmount
 
 ### About Canary and Debug?
 
