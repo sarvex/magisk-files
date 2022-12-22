@@ -1,4 +1,4 @@
-## e2771d73-delta
+## 2ab5e226-delta
 
 ### Diffs to official Magisk
 
