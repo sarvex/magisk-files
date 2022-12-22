@@ -1,6 +1,7 @@
-## Magisk 9a69ab92-delta by HuskyDG
+## 145f01f1-delta
 
-- Fix system install
+- Refactor mount mirrors and revert unmount
+- Unshare process mount namespace after setuid
 
 ### Diffs to official Magisk
 
