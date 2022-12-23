@@ -1,4 +1,4 @@
-## 48ec49a0-delta
+## 1f169da3-delta
 
 ### Diffs to official Magisk
 
@@ -17,6 +17,7 @@
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
 - [General]: Refactor mount mirrors and revert unmount
+- [MagicMount]: Recreate all mountpoint under mirrors
 
 ### About Canary and Debug?
 
