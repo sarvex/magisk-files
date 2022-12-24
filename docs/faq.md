@@ -38,7 +38,8 @@ Note that these changes are not persistent, and you will need to find ways to re
 
 1. Only Magisk Delta support Magisk installation into system partition. 
 2. Although emulator has ramdisk image, patching ramdisk is not used because ramdisk is stored in seperate partition with very SMALL disk size that is not enough to store Magisk binaries.
-3. Bluestacks and MumuPlayer X will not be supported
+3. MumuPlayer X will not be supported
+4. Latest Magisk Delta Canary has been adopted to support Bluestacks, but enabling Zygisk will cause bootloop.
 
 - Step to step to install Magisk into emulator:
 
