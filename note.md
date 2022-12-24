@@ -1,4 +1,4 @@
-## 1f169da3-delta
+## 404fc887-delta
 
 ### Diffs to official Magisk
 
@@ -16,8 +16,7 @@
 - [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist)
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
-- [General]: Refactor mount mirrors and revert unmount
-- [MagicMount]: Recreate all mountpoint under mirrors
+- [MagicMount]: Recreate all mountpoint under mirrors for magic mount compatible with overlayfs device
 
 ### About Canary and Debug?
 
