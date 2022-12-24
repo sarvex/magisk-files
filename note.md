@@ -17,6 +17,7 @@
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
 - [MagicMount]: Recreate all mountpoint under mirrors for magic mount compatible with overlayfs device
+- [General] Support Bluestacks
 
 ### About Canary and Debug?
 
