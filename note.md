@@ -1,4 +1,4 @@
-## f43f6d46-delta
+## c5015d2a-delta
 
 ### Diffs to official Magisk
 
