@@ -34,20 +34,29 @@ Note that these changes are not persistent, and you will need to find ways to re
 
 ### How to install Magisk into emulator (such as NoxPlayer, LDPlayer, etc...)?
 
-- Before start:
+#### Before start:
 
 1. Only Magisk Delta support Magisk installation into system partition. 
 2. Although emulator has ramdisk image, patching ramdisk is not used because ramdisk is stored in seperate partition with very SMALL disk size that is not enough to store Magisk binaries.
 3. MumuPlayer X will not be supported
 4. Latest Magisk Delta Canary has been adopted to support Bluestacks, but enabling Zygisk will cause bootloop.
 
-- Step to step to install Magisk into emulator:
+#### Step to step to install Magisk into emulator like NoxPlayer, LDPlayer, MemuPlayer,...
 
 1. Enable Root access in emulator settings
 2. Install and open Magisk Delta
 3. Grant root access to Magisk Delta, click "Install" under Magisk field and use "Direct Install into system partition" option instead of "Direct Install" option. If you don't see this option, close and re-open Magisk Delta app.
 4. Disable Root access in emulator settings.
     *Some emulators delete `su` executable after disabling root access, accidentally remove magisk's `su` so backup and delete `/system/xbin/su` instead.*
+5. Enjoy Magisk!
+
+#### Step to step to install Magisk into Bluestacks
+
+1. Download Bluestacks Tweaker from [here](https://bstweaker.tk/)
+2. Use Bluestacks Tweaker and click "Unlock" to unlock Bluestacks instance and then launch it, overwise you can't install Magisk
+3. When the instance starts up successfully, click "Patch" to open root access, install Magisk Delta and execute "Direct Install into system partition" action
+4. When you are done, click "UnPatch" and then relanch the instance.
+5. Enjoy Magisk! 
 
 ### Pass Safetynet / Play Integrity (Device Integrity)
 
