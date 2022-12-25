@@ -1,4 +1,4 @@
-## c5015d2a-delta
+## de994916-delta
 
 ### Diffs to official Magisk
 
