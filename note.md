@@ -1,4 +1,4 @@
-## de994916-delta
+## 304f8af6-delta
 
 ### Diffs to official Magisk
 
