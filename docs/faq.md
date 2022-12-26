@@ -45,9 +45,8 @@ Note that these changes are not persistent, and you will need to find ways to re
 
 1. Enable Root access in emulator settings
 2. Install and open Magisk Delta
-3. Grant root access to Magisk Delta, click "Install" under Magisk field and use "Direct Install into system partition" option instead of "Direct Install" option. If you don't see this option, close and re-open Magisk Delta app.
-4. Disable Root access in emulator settings.
-    *Some emulators delete `su` executable after disabling root access, accidentally remove magisk's `su` so backup and delete `/system/xbin/su` instead.*
+3. Grant root access to Magisk Delta, click "Install" under Magisk field and use "Direct Install into system partition" option instead of "Direct Install" option (If you don't see this option, close and re-open Magisk Delta app) Don't restart now!
+4. ~~Disable Root access in emulator settings.~~ Backup built-in `su` (`/system/bin/su` and `/system/xbin/su`) and delete them (in case you want to uninstall Magisk and restore to built-in `su`), then reboot. Because emulators like LDPlayer will remove all `su` after disable ROOT from settings, **DO NOT** disable Root access in emulator settings.
 5. Enjoy Magisk!
 
 #### Step to step to install Magisk into Bluestacks
