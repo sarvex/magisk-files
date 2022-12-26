@@ -1,4 +1,4 @@
-## 304f8af6-delta
+## db682e07-delta
 
 ### Diffs to official Magisk
 
@@ -16,7 +16,7 @@
 - [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist)
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
-- [MagicMount]: Recreate all mountpoint under mirrors for magic mount compatible with overlayfs device
+- [MagicMount]: Recreate all mounts under mirrors
 - [General] Support Bluestacks
 
 ### About Canary and Debug?
@@ -24,10 +24,10 @@
 - They are built from the same source code
 - Debug has more detailed logs than Canary
 
-## Magisk (c3b4678f) (25204)
+## Magisk (831a398b) (25206)
 
-- Make hiding the Magisk app 100% offline
-- Cleanups and minor refactoring of Zygisk
+- Fix support on Linux < 3.6
+- Several minor under-the-hood improvements
 
 ## Diffs to v25.2
 
@@ -35,3 +35,5 @@
 - [MagiskPolicy] Fix minor bug in command line argument parsing
 - [Zygisk] Prevent crashing daemon in error
 - [Zygisk] Rewrite zygote code injection with new loader library approach
+- [App] Make stub patching 100% offline
+
