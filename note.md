@@ -1,9 +1,9 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature**
-- Official site: <http://huskydg.github.io/magisk-files>
+- Official site: http://huskydg.github.io/magisk-files
 
-## c44e2d30-delta
+## 1d45886e-delta
 
-- Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
+- Minor changes
 
 NOTE: 
 
@@ -46,4 +46,3 @@ NOTE:
 - [Zygisk] Prevent crashing daemon in error
 - [Zygisk] Rewrite zygote code injection with new loader library approach
 - [App] Make stub patching 100% offline
-
