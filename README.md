@@ -6,23 +6,19 @@ This repo hosts Magisk delta related files
 
 ## Introduction
 
-#### **This is not an officially supported [topjohnwu](https://github.com/topjohnwu) project**. 
+**This is not an officially supported [topjohnwu](https://github.com/topjohnwu) project**. 
 
 > If you are looking for official Magisk source, you are in the wrong place, please [go to this page and download Official Magisk](https://github.com/topjohnwu/Magisk)
 
-Yet another crazy custom Magisk by HuskyDG, is always synchronized with official Magisk, including back MagiskHide and some custom features.
-
 - [Internal Documents](./docs/internal-guide.md)
 - [MagiskHide Documents](./docs/sulist.md)
-- [Frequently asked questions](./docs/faq.md)
+- [Frequently asked questions (FAQ)](./docs/faq.md)
 
 ## Download
 
-> If you are fine with official Magisk setup, it is recommended to stay. If you choose to use Magisk Delta, make sure you read all FAQs and changelog before using Magisk Delta.
+> ⚠ PLEASE READ ALL FAQ BEFORE USING!!!
 
 ### Stable / Beta
-
-> For most user, Stable build is recommended.
 
 #### Stable
 
