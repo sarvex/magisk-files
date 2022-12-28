@@ -1,9 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature**
-- Official site: http://huskydg.github.io/magisk-files
 
-## 1d45886e-delta
+## 7f89a94f-delta
 
-- Minor changes
+- Minor script changes
 
 NOTE: 
 
