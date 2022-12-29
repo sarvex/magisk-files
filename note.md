@@ -2,11 +2,7 @@
 
 ## 7f89a94f-delta
 
-- Minor script changes
-
-NOTE: 
-
-- Since Magisk Delta 25206+, Bootloop Protector is triggered not only when `zygote` keeps restarting for many times but also when system failed to boot for 3 times, which is useful for some module that cause system crashing.
+- Fix module issue
 
 ### Diffs to official Magisk
 
