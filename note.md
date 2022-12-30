@@ -1,8 +1,9 @@
-**Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature**
+**Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 7f89a94f-delta
+## 7c5183bc-delta
 
-- Fix module issue
+- Live patch SELinux rules if possible before running post-fs-data
+- Disable all modules after enabling Core-only mode
 
 ### Diffs to official Magisk
 
