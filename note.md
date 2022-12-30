@@ -1,9 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 7c5183bc-delta
+## d288595c-delta
 
-- Live patch SELinux rules if possible before running post-fs-data
-- Disable all modules after enabling Core-only mode
+- Only replace `libnb.so` when `ro.dalvik.vm.native.bridge=0`
 
 ### Diffs to official Magisk
 
