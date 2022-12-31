@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## b70ff4fc-delta
+## 32baf962-delta
 
-- Allow device with disabled selinux to active Zygisk on release build
+- Fix bootloop protection
 
 ### Diffs to official Magisk
 
