@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 32baf962-delta
+## 1ff2022d-delta
 
-- Apply `sepolicy.rule` before running module `post-fs-data.sh` script
+- Fix abnormal mount of sulist
 
 ### Last update before NEW YEAR 🎆🎆
 If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
