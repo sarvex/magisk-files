@@ -2,7 +2,16 @@
 
 ## 32baf962-delta
 
-- Fix bootloop protection
+- Apply `sepolicy.rule` before running module `post-fs-data.sh` script
+
+### Last update before NEW YEAR 🎆🎆
+If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
+
+- [MagicMount]: Recreate all mounts under mirrors to make magic mount more compatible, especially devices which use overlayfs to modify some system folder
+- [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
+- [Module] Live patch `sepolicy.rule` if it is not found in sepolicy.rules directory, especially `magiskinit` on some old devices cannot mount partition that stores `sepolicy.rule`
+
+Remember to join discussion group to feedback and report bugs
 
 ### Diffs to official Magisk
 
@@ -15,13 +24,12 @@
 - [General] Tune F2FS driver
 - [MagiskInit] Support Pre-Init mount, replace system files before `init` starts
 - [MagiskInit] Support loading custom rc script from pre-init directory
-- [App] Wait for service to bind before accessing
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
 - [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist)
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
 - [MagicMount]: Recreate all mounts under mirrors
-- [General] Support Bluestacks
+- [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
 
 ### About Canary and Debug?
