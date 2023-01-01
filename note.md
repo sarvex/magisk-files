@@ -1,9 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 7e3301da-delta
+## 54c22aea-delta
 
-- A minor changes in mount mirrors
-- Allow installing Magisk directly into `/system` from Recovery
+- Avoid duplicate mountpoint of magic mount
 
 ### HAPPY NEW YEAR 2023 🎆🎆
 If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
