@@ -18,6 +18,14 @@ Just do like when you update Magisk!
 1. Rename the extension `magisk.apk` to `magisk.zip`
 2. Open Magisk app, click "Modules" tab -> "Install from storage" and choose `magisk.zip`
 
+#### Install Magisk directly to `/system` (Not recommended)
+
+For some reasons, you don't want to install Magisk in regular way (patch boot imge), you can install Magisk directly to `/system`. Make sure you have a backup of your ROM in case system can't boot and do not use broken Custom Recovery. Your ROM must be able to mount read-write and your kernel must support dynamic SeLinux rules patch. Process this method at your own risk!
+
+1. Restore to stock boot image if you already have Magisk installed
+2. Boot to recovery, rename `magisk.apk` to `systemmagisk.zip` and flash it.
+3. If you want to update Magisk, please use **Direct Install into system partition** instead of **Direct Install**
+
 ### How do I run magisk on devices with exploit/temporarily root?
 
 Occasionally, there would be exploits in certain devices that could lead to full fledged root. On modern Android, it is possible to use MagiskSU if you can gain a shell with the following conditions:

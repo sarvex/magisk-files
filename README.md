@@ -11,7 +11,6 @@ This repo hosts Magisk delta related files
 > If you are looking for official Magisk source, you are in the wrong place, please [go to this page and download Official Magisk](https://github.com/topjohnwu/Magisk)
 
 - [Internal Documents](./docs/internal-guide.md)
-- [MagiskHide Documents](./docs/sulist.md)
 - [Frequently asked questions (FAQ)](./docs/faq.md)
 
 ## Download

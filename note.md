@@ -1,10 +1,11 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 1ff2022d-delta
+## 7e3301da-delta
 
-- Fix abnormal mount of sulist
+- A minor changes in mount mirrors
+- Allow installing Magisk directly into `/system` from Recovery
 
-### Last update before NEW YEAR 🎆🎆
+### HAPPY NEW YEAR 2023 🎆🎆
 If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
 
 - [MagicMount]: Recreate all mounts under mirrors to make magic mount more compatible, especially devices which use overlayfs to modify some system folder
