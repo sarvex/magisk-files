@@ -1,11 +1,11 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 226f6d39-delta
+## 2d10e966-delta
 
-- Skip mirror mount for rootfs `/`
+- Fix "Direct Install into system partition" on `overlayfs` root directory
 
 ### HAPPY NEW YEAR 2023 🎆🎆
-If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
+There might be a few updates before it is released as 25.2-delta-6 with highlight changes:
 
 - [MagicMount]: Recreate all mounts under mirrors to make magic mount more compatible, especially devices which use overlayfs to modify some system folder
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
@@ -25,7 +25,7 @@ Remember to join discussion group to feedback and report bugs
 - [MagiskInit] Support Pre-Init mount, replace system files before `init` starts
 - [MagiskInit] Support loading custom rc script from pre-init directory
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
-- [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist)
+- [MagiskHide] Introduce SuList feature
 - [Zygisk]: Switch to use native bridge
 - [Zygisk]: Replace xhook with lsplt hook api
 - [MagicMount]: Recreate all mounts under mirrors
