@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 54c22aea-delta
+## 226f6d39-delta
 
-- Avoid duplicate mountpoint of magic mount
+- Skip mirror mount for rootfs `/`
 
 ### HAPPY NEW YEAR 2023 🎆🎆
 If this version is stable enough, it will be released as 25.2-delta-6 with highlight changes:
