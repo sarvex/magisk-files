@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 2d10e966-delta
+## 2f4b1049-delta
 
-- Fix "Direct Install into system partition" on `overlayfs` root directory
+- Avoid unnecessary copy of `magisk.apk` to stub
 
 ### HAPPY NEW YEAR 2023 🎆🎆
 There might be a few updates before it is released as 25.2-delta-6 with highlight changes:
