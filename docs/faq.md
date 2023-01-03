@@ -26,20 +26,6 @@ For some reasons, you don't want to install Magisk in regular way (patch boot im
 2. Boot to recovery, rename `magisk.apk` to `systemmagisk.zip` and flash it.
 3. If you want to update Magisk, please use **Direct Install into system partition** instead of **Direct Install**
 
-### How do I run magisk on devices with exploit/temporarily root?
-
-Occasionally, there would be exploits in certain devices that could lead to full fledged root. On modern Android, it is possible to use MagiskSU if you can gain a shell with the following conditions:
-
-- Effective UID should be privileged (root, or euid=0)
-- Have the ability to reload sepolicy (which 99.9% of the time means SELinux permissive)
-- Have full Linux capabilities
-
-If you meet all requirement above (after running exploit root tool):
-
-- Push `magisk.apk` and `busybox` binary to `/data/local/tmp` and run [this script](https://huskydg.github.io/script/temp-magisk.sh) with root access
-
-Note that these changes are not persistent, and you will need to find ways to rerun the whole process every boot.
-
 ### How to install Magisk into emulator (such as NoxPlayer, LDPlayer, etc...)?
 
 #### Before start:
@@ -63,9 +49,17 @@ Note that these changes are not persistent, and you will need to find ways to re
 2. Use Bluestacks Tweaker and click "Unlock" to unlock Bluestacks instance and then launch it, overwise you can't install Magisk
 3. When the instance starts up successfully, click "Patch" to open root access, install Magisk Delta and execute "Direct Install into system partition" action
 4. When you are done, click "UnPatch" and then relanch the instance.
-5. Enjoy Magisk! 
+5. Enjoy Magisk!
 
-### Pass Safetynet / Play Integrity (Device Integrity)
+### After enabling MagiskHide, why my app/game can still detect emulator?
+
+MagiskHide is not emulator-detection bypass
+
+### How to manually trigger Core-only mode from Recovery?
+
+Create a empty file named `.disable_magisk` in these location: `/cache`, `/persist` or `/metadata`
+
+### How to pass Play Integrity (Device Integrity)
 
 1. Enable Zygisk or install Riru core
 2. Enable MagiskHide and install [Safetynet Fix Mod](https://github.com/HuskyDG/safetynet-integrity-fix/releases/latest)
