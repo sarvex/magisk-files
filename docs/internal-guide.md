@@ -75,3 +75,4 @@ ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-no
 ## MagiskHide SuList
 - MagiskHide in whitelist mode: Magisk is hidden by default, only process on sulist will be able to explore Magisk root privilege.
 - Use `logcat` to catch app process start up. Do not enable it on system with abnormal logcat or do not turn off logcat
+- Due to the implement work, some modules (especially font and theme overlay modules) will not work normally or cause some problem with the phone. Please do not use SuList if you use these modules
