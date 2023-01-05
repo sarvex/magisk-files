@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## a0b2003b-delta
+## 886fdde8-delta
 
-- hide: Force unshare for process which is not unshared on Android 10-
+- Always patch selinux if installing Magisk into system partition
 
 ### HAPPY NEW YEAR 2023 🎆🎆
 There might be a few updates before it is released as 25.2-delta-6 with highlight changes:
