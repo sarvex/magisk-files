@@ -21,15 +21,10 @@ This repo hosts Magisk delta related files
 
 #### Stable
 
-- [Magisk 25.2-delta-5](https://huskydg.github.io/download/magisk/25.2-delta-5.apk)
-- [Source code](https://huskydg.github.io/download/magisk/25.2-delta-5.zip)
-- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note_stable.md)
-
-#### Beta
-
 - [Magisk 25.2-delta-6](https://huskydg.github.io/download/magisk/25.2-delta-6.apk)
 - [Source code](https://huskydg.github.io/download/magisk/25.2-delta-6.zip)
-- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note_beta.md)
+- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note_stable.md)
+
 
 ### Canary / Debug
 

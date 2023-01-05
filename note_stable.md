@@ -1,27 +1,35 @@
-## Magisk v25.2-delta-5 by HuskyDG
+**Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
+
+## Magisk Delta v25.2
 
 ### Diffs to official Magisk
 
-- [General] Restore MagiskHide, uses system logcat to monitor app processes startup: disabled or abnormal logcat can't use MagiskHide.
-- [App] The package name is `io.github.huskydg.magisk`
-- [App] Support Magisk installation without boot image for emulators
-- [General] Copy required files to `/system` for `addon.d`, like Lygisk
+- [General] MagiskHide is rewritten, rely on system logcat
+- [App] Support installing into system partition
+- [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
-- [Modules] Support systemless deleting files or folders for modules
-- [General] Built-in Bootloop Protection to protect system from bootloop by Modules
-- [General] Tune F2FS for unencrypted devices
+- [Module] Support systemless deleting files or folders for modules
+- [General] Built-in Bootloop Protection to protect system from bootloop by magisk module
+- [General] Tune F2FS driver
 - [MagiskInit] Support Pre-Init mount, replace system files before `init` starts
 - [MagiskInit] Support loading custom rc script from pre-init directory
-- [App] Wait for service to bind before accessing  [topjohnwu/Magisk#6268](https://github.com/topjohnwu/Magisk/pull/6268)
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
-- [MagiskInit] Use stable random number seed [topjohnwu/Magisk#6340](https://github.com/topjohnwu/Magisk/pull/6340)
-- [MagiskHide] Introduce [SuList feature](https://huskydg.github.io/magisk-files/docs/sulist): Sulist apps are granted root, Magisk remain invisible for other processes
-- [Zygisk]: Change to Native bridge method (Credit @5ec1cff for [Maru](https://github.com/topjohnwu/Magisk/tree/940a3862a4b0868ebe02ae035bcb7fefa6985bc2), [chinese post about it](https://github.com/5ec1cff/my-notes/blob/master/maru.md))
+- [MagiskHide] Introduce SuList feature
+- [Zygisk]: Switch to use native bridge
+- [Zygisk]: Replace xhook with lsplt hook api
+- [MagicMount]: Recreate all mounts under mirrors
+- [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
+- [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
 
-## Magisk (c3b4678f) (25204)
+### About Canary and Debug?
 
-- Make hiding the Magisk app 100% offline
-- Cleanups and minor refactoring of Zygisk
+- They are built from the same source code
+- Debug has more detailed logs than Canary
+
+## Magisk (831a398b) (25206)
+
+- Fix support on Linux < 3.6
+- Several minor under-the-hood improvements
 
 ## Diffs to v25.2
 
@@ -29,3 +37,4 @@
 - [MagiskPolicy] Fix minor bug in command line argument parsing
 - [Zygisk] Prevent crashing daemon in error
 - [Zygisk] Rewrite zygote code injection with new loader library approach
+- [App] Make stub patching 100% offline
