@@ -28,7 +28,7 @@ This repo hosts Magisk delta related files
 
 ### Canary / Debug
 
-⚠ Only accept bugreports from Magisk Delta debug variant.
+> ⚠ Only accept bugreports from Magisk Delta debug variant.
 
 #### Download
 
@@ -36,6 +36,9 @@ This repo hosts Magisk delta related files
 - [Download Debug](https://huskydg.github.io/magisk-files/app-debug.apk) 
 - [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note.md)
 
+#### Source code
+
+- Magisk Delta is completely open source, you can find the source code by following url: `http://github.com/topjohnwu/magisk/tree/<MagiskVersionName without "-delta">`
 
 ## Donate me
 
