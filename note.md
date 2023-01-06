@@ -2,11 +2,12 @@
 
 ## c1171f56-delta
 
-- Update SuList
+- Fix random package app
 
 ### Diffs to 25.2-delta-6
 
 - Allow SuList apps to load magisk module mounts
+- Use old stub from Magisk v25.2
 
 ### Diffs to official Magisk
 
