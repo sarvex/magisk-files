@@ -1,13 +1,12 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## c1171f56-delta
+## 0b2d2ed3-delta
 
 - Fix random package app
 
 ### Diffs to 25.2-delta-6
 
 - Allow SuList apps to load magisk module mounts
-- Use old stub from Magisk v25.2
 
 ### Diffs to official Magisk
 
