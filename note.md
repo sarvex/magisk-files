@@ -1,17 +1,12 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 886fdde8-delta
+## c1171f56-delta
 
-- Always patch selinux if installing Magisk into system partition
+- Update SuList
 
-### HAPPY NEW YEAR 2023 🎆🎆
-There might be a few updates before it is released as 25.2-delta-6 with highlight changes:
+### Diffs to 25.2-delta-6
 
-- [MagicMount]: Recreate all mounts under mirrors to make magic mount more compatible, especially devices which use overlayfs to modify some system folder
-- [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
-- [Module] Live patch `sepolicy.rule` if it is not found in sepolicy.rules directory, especially `magiskinit` on some old devices cannot mount partition that stores `sepolicy.rule`
-
-Remember to join discussion group to feedback and report bugs
+- Allow SuList apps to load magisk module mounts
 
 ### Diffs to official Magisk
 
