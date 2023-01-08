@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 0b2d2ed3-delta
+## 5de796ce-delta
 
-- Fix random package app
+- Fix missing `/data/adb/magisk/magisk.apk`
 
 ### Diffs to 25.2-delta-6
 
