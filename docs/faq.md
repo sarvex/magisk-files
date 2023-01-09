@@ -20,7 +20,10 @@ Just do like when you update Magisk!
 
 #### Install Magisk directly to `/system` (Not recommended)
 
-For some reasons, you don't want to install Magisk in regular way (patch boot imge), you can install Magisk directly to `/system`. Make sure you have a backup of your ROM in case system can't boot and do not use broken Custom Recovery. Your ROM must be able to mount read-write and your kernel must support dynamic SeLinux rules patch. Process this method at your own risk!
+> Please only use this method on ROM with Permissive SELinux mode or Enforcing SELinux with permissive "u:r:su:s0" context in sepolicy rules such as userdebug ROM like LineageOS. You should have a backup of your ROM in case system can't boot and do not use broken Custom Recovery. Your ROM must be able to mount read-write and your kernel must support dynamic SeLinux rules patch. Process this method at your own risk!
+
+
+For some reasons, you don't want to install Magisk in regular way (patch boot imge), you can install Magisk directly to `/system`.
 
 1. Restore to stock boot image if you already have Magisk installed
 2. Boot to recovery, rename `magisk.apk` to `systemmagisk.zip` and flash it.
