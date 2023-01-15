@@ -71,3 +71,8 @@ Create a empty file named `.disable_magisk` in these location: `/cache`, `/persi
 ### Why not restore Magisk modules online repo?
 
 The official Magisk modules repository is dead and no longer maintained. Due to that, add them back is meanless. However, [Fox2Code](https://github.com/Fox2Code) has developed [Magisk Modules Manager](https://github.com/Fox2Code/FoxMagiskModuleManager)  app which allows you to download Magisk modules online.
+
+### Should I install Shxxxxo module to hide root?
+
+- It is not recommended, you should uninstall it. If not, don't complain me about crashing. MagiskHide should be enough.
+- If you really want to use Shxxxxo, then uninstall Magisk Delta and use Official Magisk ¯\_(ツ)_/¯
