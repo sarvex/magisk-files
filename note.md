@@ -2,11 +2,12 @@
 
 ## 5de796ce-delta
 
-- Fix missing `/data/adb/magisk/magisk.apk`
-
 ### Diffs to 25.2-delta-6
 
 - Allow SuList apps to load magisk module mounts
+- Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
+- Trim mountinfo before mounting mirrors
+- Inject `magiskd` by init `exec`, no longer register magisk as service
 
 ### Diffs to official Magisk
 
