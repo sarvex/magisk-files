@@ -9,6 +9,7 @@
 - [General] Trim mountinfo before mounting mirrors
 - [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 - [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
+- [MagiskHide] No longer spoof/alter/manipulate any non-Magisk related signals or traces to circumvent any device state detection
 
 ### Diffs to official Magisk
 
