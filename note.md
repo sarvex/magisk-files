@@ -1,13 +1,14 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 5de796ce-delta
+## 64faa31a-delta
 
 ### Diffs to 25.2-delta-6
 
-- Allow SuList apps to load magisk module mounts
-- Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
-- Trim mountinfo before mounting mirrors
-- Inject `magiskd` by init `exec`, no longer register magisk as service
+- [MagiskHide] Allow SuList apps to load magisk module mounts
+- [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
+- [General] Trim mountinfo before mounting mirrors
+- [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
+- [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
 
 ### Diffs to official Magisk
 
@@ -27,6 +28,7 @@
 - [MagicMount]: Recreate all mounts under mirrors
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
+- [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 
 ### About Canary and Debug?
 
