@@ -80,9 +80,9 @@ The official Magisk modules repository is dead and no longer maintained. Due to 
 ### Enable SuList causes root loss. How to fix?
 
 - Make sure `logcat` is working. SuList rely on output of `logcat` to works. If `logcat` is disabled, it will no longer be able to detect any new process and `su` will not be mounted.
-- Try enabling `logd` if it is disabled by ROM. It can be enabled by using this command `start logd` in Terminal Emulator.
+- Try enabling `logd` if it is disabled by ROM. It can be enabled by using this command `start logd` (root shell) in Terminal Emulator.
 - Uninstall any bad modules that try to disable `logd`.
-- Increase buffer size of logcat to 16M. You can use this command `logcat -G 16M` in Terminal Emulator.
+- Increase buffer size of logcat to 16M. You can use this command `logcat -G 16M` (root shell) in Terminal Emulator.
 - Some ROMs has abnormal `logcat`, please try using another ROM.
-
+- Test if `logcat` is working before enabling SuList, type `logcat -b events -s am_proc_start` (root shell) in Terminal Emulator and open few apps, it should be some lines printed out.
 
