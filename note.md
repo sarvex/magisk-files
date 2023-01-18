@@ -1,6 +1,6 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 64faa31a-delta
+## 2d737fca-delta
 
 ### Diffs to 25.2-delta-6
 
@@ -10,6 +10,8 @@
 - [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 - [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
 - [MagiskHide] No longer spoof/alter/manipulate any non-Magisk related signals or traces to circumvent any device state detection
+- [Module] Add isolated properties by canyie - `isolated.prop`
+- [Zygisk] Insert zygisk library as isolated prop
 
 ### Diffs to official Magisk
 
