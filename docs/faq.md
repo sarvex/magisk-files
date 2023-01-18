@@ -83,6 +83,7 @@ The official Magisk modules repository is dead and no longer maintained. Due to 
 - Try enabling `logd` if it is disabled by ROM. It can be enabled by using this command `start logd` (root shell) in Terminal Emulator.
 - Uninstall any bad modules that try to disable `logd`.
 - Increase buffer size of logcat to 16M. You can use this command `logcat -G 16M` (root shell) in Terminal Emulator.
-- Some ROMs has abnormal `logcat`, please try using another ROM.
+- Try disabling Zygote Preforking, you can use this command `setprop persist.device_config.runtime_native.usap_pool_enabled true` (root shell) in Terminal Emulator.
+- Some ROMs have abnormal `logcat`, please try using another ROM.
 - Test if `logcat` is working before enabling SuList, type `logcat -b events -s am_proc_start` (root shell) in Terminal Emulator and open few apps, it should be some lines printed out.
 
