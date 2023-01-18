@@ -76,3 +76,13 @@ The official Magisk modules repository is dead and no longer maintained. Due to 
 
 - It is not recommended, you should uninstall it. If not, don't complain me about crashing. MagiskHide should be enough.
 - If you really want to use Shxxxxo, then uninstall Magisk Delta and use Official Magisk ¯\_(ツ)_/¯
+
+### Enable SuList causes root loss. How to fix?
+
+- Make sure `logcat` is working. SuList rely on output of `logcat` to works. If `logcat` is disabled, it will no longer be able to detect any new process and `su` will not be mounted.
+- Try enabling `logd` if it is disabled by ROM. It can be enabled by using this command `start logd` in Terminal Emulator.
+- Uninstall any bad modules that try to disable `logd`.
+- Increase buffer size of logcat to 16M. You can use this command `logcat -G 16M` in Terminal Emulator.
+- Some ROMs has abnormal `logcat`, please try using another ROM.
+
+
