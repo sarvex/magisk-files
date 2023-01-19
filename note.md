@@ -1,15 +1,17 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 64faa31a-delta
+## fd48f87f-delta
 
 ### Diffs to 25.2-delta-6
 
-- [MagiskHide] Allow SuList apps to load magisk module mounts
+- [MagiskHide] Allow SuList apps to load magisk module mounts. Example, if you want systemless hosts load for Chrome, you need to add Chrome to SuList to let systemless hosts work!
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
 - [General] Trim mountinfo before mounting mirrors
 - [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 - [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
 - [MagiskHide] No longer spoof/alter/manipulate any non-Magisk related signals or traces to circumvent any device state detection
+- [SuList] No longer automatically grant root access for SuList apps
+- [SuList] Only unmounts after system server start, số module like systemize apps and debloat should work (you also need to add apps that is systemized by Magisk module to SuList)
 
 ### Diffs to official Magisk
 
