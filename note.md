@@ -9,9 +9,9 @@
 - [General] Trim mountinfo before mounting mirrors
 - [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 - [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
-- [MagiskHide] No longer spoof/alter/manipulate any non-Magisk related signals or traces to circumvent any device state detection
+- [MagiskHide] No longer reset sensitive properties after boot completed
 - [SuList] No longer automatically grant root access for SuList apps
-- [SuList] Only unmounts after system server start, số module like systemize apps and debloat should work (you also need to add apps that is systemized by Magisk module to SuList)
+- [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
 
 ### Diffs to official Magisk
 
