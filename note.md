@@ -1,6 +1,6 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## fd48f87f-delta
+## d2e4b079-delta
 
 ### Diffs to 25.2-delta-6
 
