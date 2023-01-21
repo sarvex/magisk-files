@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## bbf7f01a-delta
+## 7583eb16-delta
 
-- [SuList] Fix Magisk app cannot get root access after Hide Magisk app
+- [SuList] Fix SuList does not detect Magisk app if user uninstall stub app and reinstall Magisk app
 
 ### Diffs to 25.2-delta-6
 
