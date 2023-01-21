@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 4c49badb-delta
+## bbf7f01a-delta
 
-- Revert "[MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service"
+- [SuList] Fix Magisk app cannot get root access after Hide Magisk app
 
 ### Diffs to 25.2-delta-6
 
@@ -13,10 +13,11 @@
 - [MagiskHide] No longer reset sensitive properties after boot completed
 - [SuList] No longer automatically grant root access for SuList apps
 - [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
+- [SuList] Fix Magisk app cannot get root access after Hide Magisk app
 
 ### Diffs to official Magisk
 
-- [General] MagiskHide is rewritten, rely on system logcat
+- [General] Introduce MagiskHide based-logcat
 - [App] Support installing into system partition
 - [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
@@ -32,7 +33,6 @@
 - [MagicMount]: Recreate all mounts under mirrors
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
-- [MagiskInit] Inject `magiskd` by init `exec`, no longer register magisk as service
 
 ### About Canary and Debug?
 
