@@ -1,11 +1,12 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 7583eb16-delta
+## 0d7d78f1-delta
 
-- [SuList] Fix SuList does not detect Magisk app if user uninstall stub app and reinstall Magisk app
+- Switch back to Ptrace-based MagiskHide because logcat is unrealiable and will not work all the time, especially `logd` is disabled
 
 ### Diffs to 25.2-delta-6
 
+- [MagiskHide] Switch back to Ptrace-based MagiskHide
 - [MagiskHide] Allow SuList apps to load magisk module mounts. Example, if you want systemless hosts load for Chrome, you need to add Chrome to SuList to let systemless hosts work!
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
 - [General] Trim mountinfo before mounting mirrors
@@ -17,7 +18,7 @@
 
 ### Diffs to official Magisk
 
-- [General] Introduce MagiskHide based-logcat
+- [General] Restore MagiskHide from Magisk v23
 - [App] Support installing into system partition
 - [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
