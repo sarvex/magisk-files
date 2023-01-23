@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 0d7d78f1-delta
+## d807c1b0-delta
 
-- Switch back to Ptrace-based MagiskHide because logcat is unrealiable and will not work all the time, especially `logd` is disabled
+- Ensure ptrace is detached from every zygote fork
 
 ### Diffs to 25.2-delta-6
 
@@ -18,7 +18,7 @@
 
 ### Diffs to official Magisk
 
-- [General] Restore MagiskHide from Magisk v23
+- [General] Restore ptrace-based MagiskHide
 - [App] Support installing into system partition
 - [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
