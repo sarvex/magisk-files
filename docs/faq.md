@@ -62,12 +62,6 @@ MagiskHide is not emulator-detection bypass
 
 Create a empty file named `.disable_magisk` in these location: `/cache`, `/persist` or `/metadata`
 
-### How to pass Play Integrity (Device Integrity)
-
-1. Enable Zygisk or install Riru core
-2. Enable MagiskHide and install [Safetynet Fix Mod](https://github.com/HuskyDG/safetynet-integrity-fix/releases/latest)
-3. Reboot your device
-
 ### Why not restore Magisk modules online repo?
 
 The official Magisk modules repository is dead and no longer maintained. Due to that, add them back is meanless. However, [Fox2Code](https://github.com/Fox2Code) has developed [Magisk Modules Manager](https://github.com/Fox2Code/FoxMagiskModuleManager)  app which allows you to download Magisk modules online.
@@ -76,14 +70,3 @@ The official Magisk modules repository is dead and no longer maintained. Due to 
 
 - It is not recommended, you should uninstall it. If not, don't complain me about crashing. MagiskHide should be enough.
 - If you really want to use Shxxxxo, then uninstall Magisk Delta and use Official Magisk ¯\_(ツ)_/¯
-
-### Enable SuList causes root loss. How to fix?
-
-- Make sure `logcat` is working. SuList rely on output of `logcat` to works. If `logcat` is disabled, it will no longer be able to detect any new process and `su` will not be mounted.
-- Try enabling `logd` if it is disabled by ROM. It can be enabled by using this command `start logd` (root shell) in Terminal Emulator.
-- Uninstall any bad modules that try to disable `logd`.
-- Increase buffer size of logcat to 16M. You can use this command `logcat -G 16M` (root shell) in Terminal Emulator.
-- Try disabling Zygote Preforking, you can use this command `setprop persist.device_config.runtime_native.usap_pool_enabled false` (root shell) in Terminal Emulator.
-- Some ROMs have abnormal `logcat`, please try using another ROM.
-- Test if `logcat` is working before enabling SuList, type `logcat -b events -s am_proc_start` (root shell) in Terminal Emulator and open few apps, it should be some lines printed out.
-
