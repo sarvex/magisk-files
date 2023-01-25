@@ -67,12 +67,13 @@ service myservice ${MAGISKTMP}/.magisk/early-mount.d/myscript.sh
 ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-normal.conf
 ```
 
-## MagiskHide
-- Hide Magisk modifications from target on hidelist
-- Use `logcat` to monitor start up app process or Zygisk to hijack app process and check whenever a process is on hidelist
-- If a target is on hidelist, MagiskHide will fork new process, enter its mount namespace and do unmount all modifications including Magisk tmpfs path and modules to hide Magisk.
+## MagiskHide 
+
+- Hide Magisk and its modifications from chosen apps on hidelist.
+- The principal implementation: Mounted by default, Unmount if listed
 
 ## MagiskHide SuList
-- MagiskHide in whitelist mode: Magisk is hidden by default, only process on sulist will be able to explore Magisk root privilege.
-- Use `logcat` to catch app process start up. Do not enable it on system with abnormal logcat or do not turn off logcat
-- Due to the implement work, some modules (especially font and theme overlay modules) will not work normally or cause some problem with the phone. Please do not use SuList if you use these modules
+
+- Magisk is hidden by default. Chosen apps on sulist will be able to see Magisk.
+- The principal implementation: Unmount by default, Mounted if whitelisted
+
