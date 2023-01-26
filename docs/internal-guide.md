@@ -76,4 +76,4 @@ ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-no
 
 - Magisk is hidden by default. Chosen apps on sulist will be able to see Magisk.
 - The principal implementation: Unmount by default, Mounted if whitelisted
-
+- Due to the principal implementation, SuList has few problem with some module that some modules might not work properly or cause seriously problem to the system. Modules file or modified files no longer accessible after system server and app process will not able to read these files, which result in problem.
