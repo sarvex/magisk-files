@@ -1,8 +1,12 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 22790980-delta
+## 80855189-delta
 
-- SuList allows to be enabled when Zygisk is enabled
+- [Zygisk] Introduce new way to load Zygisk
+- [Zygisk] Hide magisk modules from maps
+- [SuList] Introduce Zygisk-SuList
+
+If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
 ### Diffs to 25.2-delta-6
 
@@ -15,7 +19,9 @@
 - [SuList] No longer automatically grant root access for SuList apps
 - [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
 - [SuList] Fix Magisk app cannot get root access after Hide Magisk app
-- [SuList] SuList allows to be enabled when Zygisk is enabled
+- [Zygisk] Introduce new way to load Zygisk
+- [Zygisk] Hide magisk modules from maps
+- [SuList] Introduce Zygisk-SuList
 
 ### Diffs to official Magisk
 
