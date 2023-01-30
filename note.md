@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 5885e7b6-delta
+## 654b76dd-delta
 
-- [Manager] Move "Disable Magisk" to reboot option
+- [Zygisk] Optimizate hiding maps to avoid waste memory
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -20,6 +20,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Zygisk] Introduce new way to load Zygisk
 - [Zygisk] Hide magisk modules from maps
 - [SuList] Introduce Zygisk-SuList
+- [Manager] Add Disable Magisk button in reboot option
 
 ### Diffs to official Magisk
 
