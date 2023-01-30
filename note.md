@@ -1,10 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 80855189-delta
+## 5885e7b6-delta
 
-- [Zygisk] Introduce new way to load Zygisk
-- [Zygisk] Hide magisk modules from maps
-- [SuList] Introduce Zygisk-SuList
+- [Manager] Move "Disable Magisk" to reboot option
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -26,7 +24,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 ### Diffs to official Magisk
 
 - [General] Restore ptrace-based MagiskHide
-- [App] Support installing into system partition
+- [Manager] Support installing into system partition
 - [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
 - [Module] Support systemless deleting files or folders for modules
