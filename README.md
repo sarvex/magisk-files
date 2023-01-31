@@ -15,7 +15,7 @@ This repo hosts Magisk delta related files
 
 ## Download
 
-> ⚠ PLEASE READ ALL FAQ BEFORE USING!!!
+> Magisk Delta is made for advanced users only. If you are not advanced users, you should use Official Magisk instead!
 
 ### Stable / Beta
 
