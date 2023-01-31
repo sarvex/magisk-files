@@ -1,8 +1,9 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 654b76dd-delta
+## 7d3e586e-delta
 
-- [Zygisk] Optimizate hiding maps to avoid waste memory
+- [SuList] Force adding SystemUI and Settings to SuList
+- [MagiskHide] Logcat hide returned. MagiskHide can immediately switch between two method, SuList need reboot to switch between two method. Try to restart `logd` if logcat is broken and fall back to ptrace if restarting `logd` doesn't help.
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
