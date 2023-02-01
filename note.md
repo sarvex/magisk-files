@@ -1,9 +1,9 @@
 **Welcome to Magisk Delta - the unofficial third-party Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 7d3e586e-delta
+## e08465ae-delta
 
-- [SuList] Force adding SystemUI and Settings to SuList
-- [MagiskHide] Logcat hide returned. MagiskHide can immediately switch between two method, SuList need reboot to switch between two method. Try to restart `logd` if logcat is broken and fall back to ptrace if restarting `logd` doesn't help.
+- [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList
+- [MagiskHide] Fix logcat hide might not work on old Android platform. In additional, you can enable or disable logcat proc monitor by `magisk --hide logcat enable/disable`
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -22,6 +22,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Zygisk] Hide magisk modules from maps
 - [SuList] Introduce Zygisk-SuList
 - [Manager] Add Disable Magisk button in reboot option
+- [MagiskHide] Restore logcat-based hide
 
 ### Diffs to official Magisk
 
