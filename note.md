@@ -1,9 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## e08465ae-delta
+## 78326701-delta
 
-- [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList (need reboot to take effect)
-- [MagiskHide] Fix logcat hide might not work on old Android platform. In additional, you can enable or disable logcat proc monitor by `magisk --hide logcat enable/disable`
+- [SuList] Fix Zygisk+SuList doesn't work properly
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
