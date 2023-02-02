@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 78326701-delta
+## 8d746ce2-delta
 
-- [SuList] Fix Zygisk+SuList doesn't work properly
+- [Zygisk] Fix random crash
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
