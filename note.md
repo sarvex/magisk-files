@@ -1,8 +1,8 @@
 **Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
 
-## 8d746ce2-delta
+## 65298a35-delta
 
-- [Zygisk] Fix random crash
+- [MagiskHide] Better logcat-based hide
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
