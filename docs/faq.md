@@ -29,7 +29,7 @@ For some reasons, you don't want to install Magisk in regular way (patch boot im
 2. Boot to recovery, rename `magisk.apk` to `systemmagisk.zip` and flash it.
 3. If you want to update Magisk, please use **Direct Install into system partition** instead of **Direct Install**
 
-### How to install Magisk into emulator (such as NoxPlayer, LDPlayer, etc...)?
+### How to install Magisk into Android-x86 project or Android emulator
 
 #### Before start:
 
@@ -55,6 +55,14 @@ For some reasons, you don't want to install Magisk in regular way (patch boot im
 3. When the instance starts up successfully, click "Patch" to open root access, install Magisk Delta and execute "Direct Install into system partition" action
 4. When you are done, click "UnPatch" and then relanch the instance.
 5. Enjoy Magisk!
+
+#### Step to step to install Magisk into Android-x86 project
+
+- You can use [initrd-magisk](https://github.com/HuskyDG/initrd-magisk) or directly install Magisk into system partition like guide above.
+
+#### Step to step to install Magisk on Waydroid
+
+- Please check <https://github.com/casualsnek/waydroid_script> or <https://github.com/casualsnek/waydroid_script> for more information. 
 
 ### After enabling MagiskHide, why my app/game can still detect emulator?
 
