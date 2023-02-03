@@ -62,7 +62,7 @@ For some reasons, you don't want to install Magisk in regular way (patch boot im
 
 #### Step to step to install Magisk on Waydroid
 
-- Please check <https://github.com/casualsnek/waydroid_script> or <https://github.com/casualsnek/waydroid_script> for more information. 
+- Please check <https://github.com/nitanmarcel/waydroid-magisk> or <https://github.com/casualsnek/waydroid_script> for more information. 
 
 ### After enabling MagiskHide, why my app/game can still detect emulator?
 
