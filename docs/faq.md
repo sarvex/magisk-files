@@ -35,8 +35,10 @@ For some reasons, you don't want to install Magisk in regular way (patch boot im
 
 1. Only Magisk Delta support Magisk installation into system partition. 
 2. Although emulator has ramdisk image, patching ramdisk is not used because ramdisk is stored in seperate partition with very SMALL disk size that is not enough to store Magisk binaries.
-3. MumuPlayer X will not be supported
-4. Latest Magisk Delta Canary has been adopted to support Bluestacks, but need [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk.
+3. Latest Magisk Delta Canary has been adopted to support Bluestacks, ~~but need [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk.~~
+4. List of emulators have been tested: NoxPlayer, LDPlayer, MEmu.
+5. List of Android x86 project has been tested: BlissOS, PrimeOS
+6. Waydroid is supported on Canary build.
 
 #### Step to step to install Magisk into emulator like NoxPlayer, LDPlayer, MemuPlayer,...
 
