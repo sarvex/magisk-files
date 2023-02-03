@@ -1,6 +1,6 @@
-**Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature. Please uninstall Magisk Delta if you don't trust it**
+**Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature**
 
-## f1895254-delta
+## f71636c2-delta
 
 - [MagiskHide] Better logcat-based hide
 
