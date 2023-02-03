@@ -69,11 +69,21 @@ ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-no
 
 ## MagiskHide 
 
-- Hide Magisk and its modifications from chosen apps on hidelist.
-- The principal implementation: Mounted by default, Unmount if listed
+- The basic hide feature of Magisk. Hide Magisk and its modifications from chosen apps on hidelist.
 
 ## MagiskHide SuList
 
-- Magisk is hidden by default. Chosen apps on sulist will be able to see Magisk.
-- The principal implementation: Unmount by default, Mounted if whitelisted
-- Due to the principal implementation, SuList has few problem with some module that some modules might not work properly or cause seriously problem to the system. Modules file or modified files no longer accessible after system server and app process will not able to read these files, which result in problem.
+- Magisk is hidden or unmounted by default, only chosen apps on sulist will have Magisk environment.
+- If the apps don't detect `su`, stop it forcibly and try again.
+- The modules function might not working well and need few tricks to make it work and prevent it from breaking the system.
+
+### SuList Tips
+
+- In order to make modules more compatible with SuList, Magisk Delta supports mount module for SuList apps again after all modules file are directly unmounted from zygote process. However, it is better to enable Core-only mode before switching to SuList, add necessary apps to load modules then enable modules and reboot. If there is something wrong (SystemUI crashs), you can connect your device to adb and disable sulist by this command and reboot:
+
+```
+adb shell su -c magisk --hide sulist disable
+```
+
+- Theme modules usually need SystemUI, Settings and Launcher to always be added to SuList to prevent crashing, there might be additional apps need to be added also
+
