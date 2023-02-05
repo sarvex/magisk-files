@@ -1,14 +1,15 @@
 **Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature**
 
-## f71636c2-delta
+## 3b9db6e6-delta
 
-- [MagiskHide] Better logcat-based hide
+- [General] Rename `magisk.apk` to `disabler.zip` and flash in Recovery to install Magisk Delta + enable Core-only mode
+- [General] Sync upstream source code to d740bbe0
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
 ### Diffs to 25.2-delta-6
 
-- [MagiskHide] Switch back to Ptrace-based MagiskHide
+- [MagiskHide] revive Ptrace-based MagiskHide
 - [MagiskHide] Allow SuList apps to load magisk module mounts. Example, if you want systemless hosts load for Chrome, you need to add Chrome to SuList to let systemless hosts work!
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
 - [General] Trim mountinfo before mounting mirrors
@@ -26,7 +27,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Diffs to official Magisk
 
-- [General] Restore ptrace-based MagiskHide
+- [General] MagiskHide is back
 - [Manager] Support installing into system partition
 - [General] Copy required files to `/system` for `addon.d`
 - [Manager] Show all supported languages in Language settings for Chinese ROM
@@ -37,7 +38,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [MagiskInit] Support loading custom rc script from pre-init directory
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
 - [MagiskHide] Introduce SuList feature
-- [Zygisk]: Switch to use native bridge
+- [Zygisk]: Switch to use native bridge by 5ec1cff
 - [Zygisk]: Replace xhook with lsplt hook api
 - [MagicMount]: Recreate all mounts under mirrors
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
