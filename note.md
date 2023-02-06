@@ -1,9 +1,8 @@
-**Welcome to Magisk Delta - the unofficial third-party open source Magisk with extra feature**
+## 976171f8-delta
 
-## 3b9db6e6-delta
+> Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [General] Rename `magisk.apk` to `disabler.zip` and flash in Recovery to install Magisk Delta + enable Core-only mode
-- [General] Sync upstream source code to d740bbe0
+- [MagiskHide] Internal changes, remove useless a CLI option
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -13,7 +12,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [MagiskHide] Allow SuList apps to load magisk module mounts. Example, if you want systemless hosts load for Chrome, you need to add Chrome to SuList to let systemless hosts work!
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
 - [General] Trim mountinfo before mounting mirrors
-- [MagiskHide] Refactor logcat-based hide (it might not work properly with Zygote Preforking enabled)
+- [MagiskHide] Refactor logcat-based hide (it will not work properly with Zygote Preforking enabled)
 - [MagiskHide] No longer reset sensitive properties after boot completed
 - [SuList] No longer automatically grant root access for SuList apps
 - [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
@@ -24,6 +23,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Manager] Add Disable Magisk button in reboot option
 - [MagiskHide] Restore logcat-based hide. In additional, you can enable or disable logcat proc monitor by `magisk --hide logcat enable/disable`
 - [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList (need reboot to take effect)
+- [Manager] Flashing `disabler.zip` to install Magisk and enable Core-only mode
 
 ### Diffs to official Magisk
 
@@ -44,10 +44,9 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
 
-### About Canary and Debug?
+### Magisk upstream
 
-- They are built from the same source code
-- Debug has more detailed logs than Canary
+- Sync upstream source code to d740bbe0
 
 ## Magisk (831a398b) (25206)
 
