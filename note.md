@@ -1,8 +1,8 @@
-## 976171f8-delta
+## 020d80f0-delta
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [MagiskHide] Internal changes, remove useless a CLI option
+- [MagiskHide] Minor adjustments
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
