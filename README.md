@@ -15,7 +15,7 @@ This repo hosts Magisk delta related files
 
 ## Download
 
-> Magisk Delta is made for advanced users only. If you are not advanced users, you should use Official Magisk instead!
+> Magisk Delta is unofficial third-party bleeding Magisk, which means it includes some upstream changes which has not been on Official Magisk Canary build. If you are not advanced users, you should use Official Magisk instead!
 
 ### Stable / Beta
 
@@ -33,7 +33,7 @@ This repo hosts Magisk delta related files
 
 #### Source code
 
-- Magisk Delta is completely open source, you can find the source code by following url: `http://github.com/topjohnwu/magisk/tree/<MagiskVersionName without "-delta">`
+- Magisk Delta is open source and source code can be found easily by following url: `http://github.com/topjohnwu/magisk/tree/<MagiskVersionName without "-delta" suffix>`
 
 ## Donate me
 

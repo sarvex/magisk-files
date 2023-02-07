@@ -1,8 +1,8 @@
-## 020d80f0-delta
+## 97abe99a-delta
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [MagiskHide] Minor adjustments
+- [MagiskHide] Update Logcat/Ptrace Hide to handle USAP more properly
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
