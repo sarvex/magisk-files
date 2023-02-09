@@ -1,18 +1,17 @@
-## fdb1fbaf-delta
+## 87aa7903-delta
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [MagiskHide] Update Logcat/Ptrace Hide to handle USAP more properly
+- [MagiskHide] Rewrite Ptrace MagiskHide, Logcat MagiskHide has been removed
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
 ### Diffs to 25.2-delta-6
 
-- [MagiskHide] revive Ptrace-based MagiskHide
-- [MagiskHide] Allow SuList apps to load magisk module mounts. Example, if you want systemless hosts load for Chrome, you need to add Chrome to SuList to let systemless hosts work!
+- [MagiskHide] Switch to Ptrace-based MagiskHide
+- [MagiskHide] Allow SuList apps to load magisk module mounts.
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
 - [General] Trim mountinfo before mounting mirrors
-- [MagiskHide] Refactor logcat-based hide (it will not work properly with Zygote Preforking enabled)
 - [MagiskHide] No longer reset sensitive properties after boot completed
 - [SuList] No longer automatically grant root access for SuList apps
 - [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
@@ -21,7 +20,6 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Zygisk] Hide magisk modules from maps
 - [SuList] Introduce Zygisk-SuList
 - [Manager] Add Disable Magisk button in reboot option
-- [MagiskHide] Restore logcat-based hide. In additional, you can enable or disable logcat proc monitor by `magisk --hide logcat enable/disable`
 - [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList (need reboot to take effect)
 - [Manager] Flashing `disabler.zip` to install Magisk and enable Core-only mode
 
