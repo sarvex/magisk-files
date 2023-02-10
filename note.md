@@ -1,8 +1,9 @@
-## 87aa7903-delta
+## 5dfdfddd-delta
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [MagiskHide] Rewrite Ptrace MagiskHide, Logcat MagiskHide has been removed
+- [MagiskHide] Allows MagiskHide and SuList to work on ROM with disabled SeLinux again
+- [General] Sync upstream source code to 220a1c8
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -44,7 +45,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Magisk upstream
 
-- Sync upstream source code to d740bbe0
+- Sync upstream source code to 220a1c8
 
 ## Magisk (831a398b) (25206)
 
