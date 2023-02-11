@@ -71,6 +71,18 @@ ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-no
 
 - The basic hide feature of Magisk. Hide Magisk and its modifications from chosen apps on hidelist.
 
+### How does MagiskHide work?
+
+- The implementation of MagiskHide is ptrace Zygote process, every forks of Zygote will be notified and traced also.
+- Does not like MagiskHide from Magisk v23.0 which monitors every thread spawn event of Zygote fork (app process is heavily a multithreads process which will spawn threads to trigger MagiskHide to check UID and cmdline)
+- There is an exception that app zygote does not spawn threads and thus it won't trigger MagiskHide to unmount Magisk and detach.
+- To fix this problem, we trace the syscalls `prctl()` instead of thread spawn event of Zygote fork like MagiskHide in Magisk v23.0
+- After processes has been forked from zygote, there will be atleast `prctl()` is called to change the process name. For normal app process and isolated process, the process name will be changed as followed: 
+  - `zygote` -> `(unknown name)` -> `<pre-initialized>` -> `(process name)`. So the key is `<pre-initialized>`, after that we can guess it is target process or not.
+- For app zygote, there is only once `prctl()` is called to change process name: `zygote` -> `package.name_zygote`.
+- The changing process name happens before apk is being loaded so we can detach it from ptrace, do unmount all Magisk files and nearly there is no traces left after that.
+
+
 ## MagiskHide SuList
 
 - Magisk is hidden or unmounted by default, only chosen apps on sulist will have Magisk environment.
