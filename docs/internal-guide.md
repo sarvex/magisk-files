@@ -51,7 +51,7 @@ service myservice ${MAGISKTMP}/.magisk/early-mount.d/myscript.sh
 
 ## Remove files and folders
 
-- Magisk has module feature which allows users to add and replace files in system without making actual changes to system partitions, so you still can receive OTA,... However, Magisk module does not allow users to make some files in system become invisible.
+- Using Magisk module is the easy way to modify system partitions without actually making changes to the system partitions, and the changes can be easily. Magisk modules can replace and add any file or folder to system. However, removing files by Magisk modules is still not allowed.
 
 - In Magisk documentation:
 
@@ -59,9 +59,9 @@ service myservice ${MAGISKTMP}/.magisk/early-mount.d/myscript.sh
 
 > It is complicated to actually remove a folder (possible, not worth the effort). Replacing it with an empty folder should be good enough. Add the folder to the replace list in "config.sh" in the module template, it will replace the folder with an empty one
 
-- In some case, replace file or folder with blank one is not enough and might cause issue. And some modding require files to be disappeared in order to take effect. So Magisk Delta has added removal support for modules. Replacing the target which you want to be deleted with the broken symlink point to `/xxxxx`. When Magic mount happened and detected this symlink, the target will be ignored and disappeared.
+- In some case, replacing file or folder with empty one is not enough and might cause issue, some modding require files to be disappeared in order to take effect. So Magisk Delta has added removal support for modules: Create the broken symlink which points to `/xxxxx` into the corresponding location of module directory
 
-- Example creating symbolic link as `/data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-normal.conf`, the target `/vendor/etc/thermal-engine-normal.conf` will be ignored and disappeared:
+- Example creating symbolic link as `/data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-normal.conf`, the target `/vendor/etc/thermal-engine-normal.conf` will be ignored and disappeared
 
 ```
 ln -s "/xxxxx" /data/adb/modules/mymodule_id/system/vendor/etc/thermal-engine-normal.conf
