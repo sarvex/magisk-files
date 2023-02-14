@@ -1,9 +1,9 @@
-## 5dfdfddd-delta
+## a8bbf631-delta
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [MagiskHide] Allows MagiskHide and SuList to work on ROM with disabled SeLinux again
-- [General] Sync upstream source code to 220a1c8
+- [MagiskHide] Ptrace MagiskHide requires kernel v4.4+
+- [General] Sync upstream source code to 577b5912
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
