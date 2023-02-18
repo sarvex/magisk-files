@@ -2,7 +2,9 @@
 
 > Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
-- [General] Sync upstream source code to 577b5912
+- [General] Sync upstream source code to ae34659b2
+- [MagiskHide] Skip non-target apps earlier
+- [SuList] Directly skip isolated process
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
@@ -22,8 +24,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Manager] Add Disable Magisk button in reboot option
 - [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList (need reboot to take effect)
 - [Manager] Flashing `disabler.zip` to install Magisk and enable Core-only mode
-- [MagiskHide] Introduce new Ptrace MagiskHide, it might not work on lower kernel version
- 
+
 ### Diffs to official Magisk
 
 - [General] MagiskHide is back
@@ -45,7 +46,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Magisk upstream
 
-- Sync upstream source code to 220a1c8
+- Sync upstream source code to ae34659b2
 
 ## Magisk (831a398b) (25206)
 
