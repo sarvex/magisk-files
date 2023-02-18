@@ -1,10 +1,14 @@
-## a8bbf631-delta
+## 1c6d25f7-delta
 
-> Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
+- Minor adjustments for a8bbf631-delta
+
+## a8bbf631-delta
 
 - [General] Sync upstream source code to ae34659b2
 - [MagiskHide] Skip non-target apps earlier
 - [SuList] Directly skip isolated process
+
+Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
 If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/huskydg)
 
