@@ -80,3 +80,7 @@ The official Magisk modules repository is dead and no longer maintained. Due to 
 
 - It is not recommended, you should uninstall it. If not, don't complain me about crashing. MagiskHide should be enough.
 - If you really want to use Shxxxxo, then uninstall Magisk Delta and use Official Magisk ¯\_(ツ)_/¯
+
+### Why some modules are broken after enabling SuList?
+
+SuList means MagiskSU and modules are not mounted by default, only the those apps in the list will have Magisk mounted, so the functionality of the modules is not fully supported because most of them must be mounted in all apps, which is equivalent to be detected. More information about SuList, please [read this](./internal-guild#magiskhide-sulist)
