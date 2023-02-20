@@ -1,7 +1,6 @@
-## de8177cb-delta
+## ff648628-delta
 
-- [MagiskHide] Don't try to ptrace died zygote
-- [SuList] Don't warn that files are skipped mount
+- [Zygisk] Fix no unload
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
