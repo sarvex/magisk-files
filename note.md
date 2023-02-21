@@ -1,8 +1,6 @@
-## 8d2effc9-delta
+## 7f33b052-delta
 
-- [MagiskHide] Improve ptrace-based hide algorithm
-- [SuList] Don't spam log that files are skipped mount
-- [Zygisk] Minor changes
+- [Zygisk] Revert some changes
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
