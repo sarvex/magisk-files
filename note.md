@@ -1,6 +1,6 @@
-## 7f33b052-delta
+## 01a70d4b-delta
 
-- [Zygisk] Revert some changes
+- [MagiskHide] Refine unmount
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
