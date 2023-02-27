@@ -1,8 +1,12 @@
+## b8694c99-delta
+
+- [MagiskHide] Fix MagiskHide and SuList don't target apps after uninstall and reinstall.
+
 ## de795cd6-delta
 
 - [MagiskHide] Fix ptrace detection (MPL Pro)
 
-This is an emergency patch. I am not updating to 25207 yet because I have to deal with major changes of upstream source code and currently I do not have enough time for it.
+This is a quick patch. I am not updating to 25207 yet because I have to deal with major changes of upstream source code and currently I do not have enough time for it.
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
