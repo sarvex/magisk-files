@@ -33,7 +33,7 @@ This repo hosts Magisk delta related files
 
 #### Source code
 
-- Magisk Delta is open source and source code can be found easily by following url: `http://github.com/topjohnwu/magisk/tree/<MagiskVersionName without "-delta" suffix>`
+- Source code will be published here: <http://github.com/huskydg/itsmagical>
 
 ## Donate me
 
