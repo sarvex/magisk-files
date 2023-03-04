@@ -1,7 +1,6 @@
-## d79f32a3-delta
+## 299f89c1-delta
 
-- [General] Sync upstream source code to 1aade8f
-- [MagiskInit] Revert "Refactor sepolicy.rules"
+- [MagiskHide] Fix crash daemon
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
