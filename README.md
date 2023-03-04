@@ -33,7 +33,7 @@ This repo hosts Magisk delta related files
 
 #### Source code
 
-- Source code will be published here: <http://github.com/huskydg/itsmagical>
+- Source code will be published here: <https://github.com/HuskyDG/magisk-files/releases>
 
 ## Donate me
 
