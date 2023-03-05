@@ -1,6 +1,6 @@
-## 299f89c1-delta
+## 91842209-delta
 
-- [MagiskHide] Fix crash daemon
+- [Manager] New icon design by @HardcodedCat
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
