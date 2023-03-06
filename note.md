@@ -1,6 +1,6 @@
-## 91842209-delta
+## 2304d221-delta
 
-- [Manager] New icon design by @HardcodedCat
+- [General] Sync upstream source code to 71b7f526
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
@@ -44,7 +44,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Magisk upstream
 
-- Sync upstream source code to 1aade8f
+- Sync upstream source code to 71b7f526
 
 ## Magisk (831a398b) (25206)
 
