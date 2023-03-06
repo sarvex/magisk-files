@@ -12,6 +12,7 @@ This repo hosts Magisk delta related files
 
 - [Internal Documents](./docs/internal-guide.md)
 - [Frequently asked questions (FAQ)](./docs/faq.md)
+- [Monet edition](./monet)
 
 ## Download
 

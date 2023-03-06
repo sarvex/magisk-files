@@ -1,0 +1,35 @@
+name: upload monet
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download source code
+      run: |
+        MAGISKVERSION="$(wget -q https://raw.githubusercontent.com/huskydg/magisk-files/main/monet/canary.json -O - | jq -r ".magisk.version")"
+        MAGISKVERSIONCODE="$(wget -q https://raw.githubusercontent.com/huskydg/magisk-files/main/monet/canary.json -O - | jq -r ".magisk.versionCode")"
+        for i in app-release.apk app-debug.apk canary.json debug.json; do
+            wget "https://raw.githubusercontent.com/huskydg/magisk-files/main/monet/$i" -O "$i"
+        done
+        wget "https://github.com/topjohnwu/Magisk/archive/$(echo -n "$MAGISKVERSION" | sed "s/\-delta//g").zip" -O source-code.zip
+        echo "MAGISKVERSION=$MAGISKVERSION" >> $GITHUB_ENV
+        echo "MAGISKVERSIONCODE=$MAGISKVERSIONCODE" >> $GITHUB_ENV
+        sed -i "s|https://huskydg.github.io/magisk-files/monet/|https://github.com/huskydg/magisk-files/releases/download/$MAGISKVERSION/|g" canary.json
+        sed -i "s|https://huskydg.github.io/magisk-files/monet/|https://github.com/huskydg/magisk-files/releases/download/$MAGISKVERSION/|g" debug.json
+
+    - uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "${{ env.MAGISKVERSION }}"
+        prerelease: false
+        title: "${{ env.MAGISKVERSION }}(${{ env.MAGISKVERSIONCODE }}) Monet edition"
+        files: |
+          app-release.apk
+          app-debug.apk
+          source-code.zip
+          canary.json
+          debug.json
+          
