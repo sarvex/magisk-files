@@ -24,7 +24,7 @@ jobs:
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "${{ env.MAGISKVERSION }}"
-        prerelease: false
+        prerelease: true
         title: "${{ env.MAGISKVERSION }}(${{ env.MAGISKVERSIONCODE }}) Monet edition"
         files: |
           app-release.apk
