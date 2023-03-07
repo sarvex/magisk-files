@@ -4,8 +4,8 @@ This repo hosts Magisk delta related files
 
 ![Delta](https://user-images.githubusercontent.com/84650617/222942594-63336f63-6a26-492e-a1d1-a356b5f777b3.png)
 
-<img src="https://user-images.githubusercontent.com/84650617/222940919-a93c4809-1a6c-41dd-bb97-031dc033ad5d.jpg" width="30%"/> <img src="https://user-images.githubusercontent.com/84650617/222940925-8d2c9b18-3032-4932-8f1e-c753b3757766.jpg" width="30%"/> <img src="https://user-images.githubusercontent.com/84650617/222940927-31ed989e-74fa-4cdd-b6c3-6cb32f734ef1.jpg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/84650617/222940929-21866bf8-b7e0-4f29-98ea-eb0c3d4738b1.jpg" width="30%"/> <img src="https://user-images.githubusercontent.com/84650617/222940930-96e5acb1-68be-44f9-b3df-b8d5f2eb5acb.jpg" width="30%"/> <img src="https://user-images.githubusercontent.com/84650617/222940931-a4e7c961-1ca6-44e9-93e8-29c22bfcaa3d.jpg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/84650617/223426748-e540fc45-cd3a-4486-af03-cb9c93a9308b.png" width="50%"/><img src="https://user-images.githubusercontent.com/84650617/223426852-e633a421-1af5-4577-beda-274637d8ce08.png" width="50%"/>
+
 
 ## Introduction
 
