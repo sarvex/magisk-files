@@ -1,12 +1,12 @@
 {
   "magisk": {
-    "version": "c78daad7-delta",
+    "version": "374633d9-delta",
     "versionCode": "25210",
     "link": "https://huskydg.github.io/magisk-files/app-release.apk",
     "note": "https://huskydg.github.io/magisk-files/note.md"
   },
   "stub": {
-    "versionCode": "35",
+    "versionCode": "34",
     "link": "https://huskydg.github.io/magisk-files/stub-release.apk"
   }
 }
