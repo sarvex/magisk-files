@@ -1,6 +1,17 @@
 name: upload
 
-on: [push, workflow_dispatch]
+on: 
+  push:
+    branches: [ main ]
+    paths:
+      - 'app-release.apk'
+      - 'app-debug.apk'
+      - 'stub-release.apk'
+      - 'stub-debug.apk'
+      - 'canary.json'
+      - 'debug.json'
+      - 'note.md'
+  workflow_dispatch:
 
 jobs:
   build:
