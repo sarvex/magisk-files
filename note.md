@@ -1,6 +1,6 @@
-## d5a3c991-delta
+## f59404d9-delta
 
-- [Manager] More ugly monet design
+- [Manager] Update UI
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
