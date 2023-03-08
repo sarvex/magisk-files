@@ -1,6 +1,6 @@
-## 374633d9-delta
+## d5a3c991-delta
 
-- [Manager] Make text in superuser and module tab more smaller.
+- [Manager] More ugly monet design
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
