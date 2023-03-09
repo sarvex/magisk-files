@@ -1,6 +1,8 @@
-## 73159e22-delta
+## edb01939-delta
 
-- [Manager] Temporarily use old logo to fix logo bugs on Android 11-
+- [MagiskHide] Fix unmount
+- [MagicMount] Make worker read-only
+- [General] Sync upstream source code to 1a164679 but revert some buggy changes
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
@@ -44,7 +46,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Magisk upstream
 
-- Sync upstream source code to 71b7f526
+- Sync upstream source code to 1a164679
 
 ## Magisk (831a398b) (25206)
 
