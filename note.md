@@ -1,6 +1,6 @@
-## 630abd8b-delta
+## cb580e75-delta
 
-- [Manager] Update UI
+- [General] Revert changes and downgrade source code back to 71b7f52
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
@@ -44,7 +44,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 
 ### Magisk upstream
 
-- Sync upstream source code to 1a164679
+- Sync upstream source code to 71b7f52
 
 ## Magisk (831a398b) (25206)
 
