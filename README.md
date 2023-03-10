@@ -4,8 +4,7 @@ This repo hosts Magisk delta related files
 
 ![Delta](https://user-images.githubusercontent.com/84650617/222942594-63336f63-6a26-492e-a1d1-a356b5f777b3.png)
 
-<img src="https://user-images.githubusercontent.com/84650617/223767950-c43dfcad-f813-44bf-855b-27291208a618.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/223767996-f757e070-1c66-4cea-a783-e65c10640dd9.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/223768059-dedbe663-c6d5-4282-b5fa-85310a6d403d.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/223768101-3bb85d3a-34ff-4398-8928-bb552959dd8c.png" width="25%"/>
-
+<img src="https://user-images.githubusercontent.com/84650617/224252197-cc54e66d-e4dd-49d4-ab8b-4506a6a3aecd.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/223767996-f757e070-1c66-4cea-a783-e65c10640dd9.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/224252519-2d676a3e-408d-43db-9f59-17d942d3ed9f.png" width="25%"/><img src="https://user-images.githubusercontent.com/84650617/224252589-98baf8f9-c4a1-4195-bacf-ed63908154f0.png" width="25%"/>
 
 ## Introduction
 
