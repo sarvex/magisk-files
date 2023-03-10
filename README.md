@@ -20,7 +20,7 @@ This repo hosts Magisk delta related files
 
 ### Stable / Beta
 
-- [Download Magisk 25206](https://cdn.jsdelivr.net/gh/huskydg/magisk-files@774a0889dca6b86ac23d1befe3be783dad9189a6/app-release.apk)
+- [Download Magisk 25206](https://cdn.jsdelivr.net/gh/huskydg/magisk-files@301b1865c7d47bbed1e375541987aee0cd1b753d/app-release.apk)
 
 ### Canary / Debug
 
