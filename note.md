@@ -1,6 +1,6 @@
-## 9c190b3f-delta
+## 630abd8b-delta
 
-- [Manager] Fix superuser item does not expand if toggle is off
+- [Manager] Update UI
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
