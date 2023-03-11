@@ -1,6 +1,6 @@
-## ed8e3234-delta
+## 64a0a328-delta
 
-- [General] Support Android 14
+- [Zygisk] Remove hiding maps and new loader
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
@@ -9,17 +9,13 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 ### Diffs to 25.2-delta-6
 
 - [MagiskHide] Switch to Ptrace-based MagiskHide
-- [MagiskHide] Allow SuList apps to load magisk module mounts.
+- [SuList] Reload module files for apps on SuList
 - [General] Fix MagiskHide and Zygisk become non-functional after enable Core-only mode
-- [General] Trim mountinfo before mounting mirrors
-- [MagiskHide] No longer reset sensitive properties after boot completed
+- [MagiskHide] Remove hiding sensitive properties
 - [SuList] No longer automatically grant root access for SuList apps
-- [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
+- [SuList] Unmount Magisk in Zygote after system server started
 - [SuList] Fix Magisk app cannot get root access after Hide Magisk app
-- ~~[Zygisk] Introduce new way to load Zygisk~~ (will be removed soon)
-- [Zygisk] Hide magisk modules from maps
-- [SuList] Introduce Zygisk-SuList
-- [Manager] Add Disable Magisk button in reboot option
+- [Manager] Move Disable Magisk button to reboot option
 - [SuList] Add `magisk --hide sulist enable/disable` CLI to enable/disable SuList (need reboot to take effect)
 - [Manager] Flashing `disabler.zip` to install Magisk and enable Core-only mode
 
@@ -31,14 +27,15 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Manager] Show all supported languages in Language settings for Chinese ROM
 - [Module] Support systemless deleting files or folders for modules
 - [General] Built-in Bootloop Protection to protect system from bootloop by magisk module
-- [General] Tune F2FS driver
-- [MagiskInit] Support Pre-Init mount, replace system files before `init` starts
+- [General] Tune F2FS driver to fix problem on unencrypted f2fs `/data`
+- [MagiskInit] Support Pre-Init mount that replaces system files before `init` starts
 - [MagiskInit] Support loading custom rc script from pre-init directory
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
 - [MagiskHide] Introduce SuList feature
 - [Zygisk]: Switch to use native bridge by 5ec1cff
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
+- [Manager] Monet theme based
 
 ### Magisk upstream
 
