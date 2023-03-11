@@ -1,6 +1,6 @@
-## cb580e75-delta
+## ed8e3234-delta
 
-- [MagiskHide] Fix duplicated unmounts
+- [General] Support Android 14
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
@@ -16,7 +16,7 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [SuList] No longer automatically grant root access for SuList apps
 - [SuList] Only unmounts after system server start, so module like systemize apps and debloat should work (you also need to add apps that are systemized by Magisk module to SuList)
 - [SuList] Fix Magisk app cannot get root access after Hide Magisk app
-- [Zygisk] Introduce new way to load Zygisk
+- ~~[Zygisk] Introduce new way to load Zygisk~~ (will be removed soon)
 - [Zygisk] Hide magisk modules from maps
 - [SuList] Introduce Zygisk-SuList
 - [Manager] Add Disable Magisk button in reboot option
@@ -37,8 +37,6 @@ If you like my work, you can donate me at [PayPal/HuskyDG](http://paypal.me/husk
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
 - [MagiskHide] Introduce SuList feature
 - [Zygisk]: Switch to use native bridge by 5ec1cff
-- [Zygisk]: Replace xhook with lsplt hook api
-- [MagicMount]: Recreate all mounts under mirrors
 - [General] Support Bluestacks, needs [app_process wrapper](https://github.com/HuskyDG/app_process_wrapper/releases) to run Zygisk, overwise it will be bootloop
 - [Module] Live patch `sepolicy.rule` if it is not found in `sepolicy.rules` directory
 
