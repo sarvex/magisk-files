@@ -34,13 +34,13 @@ This repo hosts Magisk delta related files
 
 #### Source code
 
-- Source code will be published here: <https://github.com/HuskyDG/magisk-files/releases>
+- Magisk Delta is [open source under GNU v3](#license). The `source-code.zip` will be published along with released build here: <https://github.com/HuskyDG/magisk-files/releases>
+- The process to build Magisk Delta is same as [Official Magisk](https://github.com/topjohnwu/magisk#building-and-development). Remember to add `-delta` prefix into `versionName` in `config.prop`.
 
 ## Donate me
 
 - Paypal: [paypal.me/huskydg](http://paypal.me/huskydg)
 - You can now donate me if you want. Remember, I will not make this as a monetization tool and donate is not obligated. Thanks for all your supports and hope you have a good day! 👍
-
 
 ## Other links
 
