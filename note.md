@@ -1,6 +1,7 @@
-## c28c6e7c-delta
+## 7830c57a-delta
 
-- [General] Revert some changes
+- [General] Fix missing `/sbin` when using option that installs Magisk into `/system` on Android 11+
+- [MagicMount] Inject Magisk binaries by using `overlayfs`
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
 
