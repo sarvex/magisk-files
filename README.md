@@ -49,6 +49,7 @@ This repo hosts Magisk delta related files
 
 - Magisk author: [topjohnwu](https://github.com/topjohnwu/magisk)
 - Magisk contributors: [vvb2060](https://github.com/vvb2060), [yujincheng08](https://github.com/yujincheng08), [RikkaW](https://github.com/RikkaW), [canyie](https://github.com/canyie)
+- SuList idea: [MagiskLite](http://t.me/magisklite)
 - Maru (zygisk native bridge): [5ec1cff](https://github.com/5ec1cff)
 - Other: [osm0sis](https://github.com/osm0sis), [diareuse](https://github.com/diareuse),...
 - Monet design: [HardcodedCat](https://github.com/HardcodedCat), [datnerdguy](https://github.com/datnerdguy)
